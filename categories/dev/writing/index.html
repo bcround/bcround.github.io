@@ -1,415 +1,469 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Category: writing - BC의 코딩그라운드</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="BC의 코딩그라운드"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="BC의 코딩그라운드"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="BC의 코딩그라운드"><meta property="og:url" content="https://bcround.github.io/"><meta property="og:site_name" content="BC의 코딩그라운드"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://bcround.github.io/img/og_image.png"><meta property="article:author" content="Bongchul Sin"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://bcround.github.io"},"headline":"BC의 코딩그라운드","image":["https://bcround.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Bongchul Sin"},"description":""}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.2.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="BC의 코딩그라운드" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">Categories</a></li><li><a href="/categories/dev/">dev</a></li><li class="is-active"><a href="#" aria-current="page">writing</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-25T08:48:14.000Z" title="2020-10-25T08:48:14.000Z">2020-10-25</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-25T09:11:57.762Z" title="2020-10-25T09:11:57.762Z">2020-10-25</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">3 minutes read (About 406 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/25/HTML-CSS-First-Weekend-Study/">TIL 20/10/25 일요일 자습</a></h1><div class="content"><h1 id="오늘-한-일"><a href="#오늘-한-일" class="headerlink" title="오늘 한 일"></a>오늘 한 일</h1><p>오늘은 처음으로 주말에 패스트캠퍼스 학원에 나와서 자습을 했다. 금요일날 강의에서 다루었던 HTML구조와 CSS 디자인을 복습하고 다시 처음부터 만들어 보았고 개념이 부족한 부분들에 대해서 동영상 강의를 다시 보았다. 강사님과 한 방법과 다르게 해보다보니 문제점들이 발생하였고 그 문제점들을 해결하는 과정에서 새로운 정보들을 많이 알게 되었다. 게으르게 행동하지 말고 매주 주말마다 적어도 한번은 학원에 나와서 자습을 해야겠다.</p>
-<hr>
-<h2 id="radial-gradient"><a href="#radial-gradient" class="headerlink" title="radial-gradient"></a>radial-gradient</h2><ul>
-<li>radial-gradient 속성은 원형으로 그라데이션 효과를 주기 위해서 사용한다. CSS3에서 추가되었고 IE10이상에서 지원한다.</li>
-<li>문법<ul>
-<li><code>background: radial-gradient(&#123;shape&#125; &#123;size&#125; at &#123;position&#125;, color1, color2, ...) </code><ul>
-<li>shape: 원인지 타원형 모양인지를 정해준다. (circle or ellipse)</li>
-<li>size: 크기를 정해준다.</li>
-<li>position: 중심의 위치를 정한다.</li>
-<li>color: 색을 정한다. 색 뒤에 길이를 넣어서 색이 차지하는 범위를 정할 수 있다. (% or px)</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="inline-block-요소의-baseline"><a href="#inline-block-요소의-baseline" class="headerlink" title="inline-block 요소의 baseline"></a>inline-block 요소의 baseline</h2><ul>
-<li><p>text가 없는 비어있는 inline-block의 경우:</p>
-<ul>
-<li>inline-block 요소의 baseline은  margin box의 하단 부분이 된다.</li>
-</ul>
-</li>
-<li><p>text가 있는 inline-block의 경우:</p>
-<ul>
-<li>normal flow 에서 마지막 text content요소가 baseline이 된다. 즉, text의 마지막줄이 baseline이 된다.</li>
-</ul>
-</li>
-<li><p>overflow의 값이 visible이 아닌 다른 값의 경우</p>
-<ul>
-<li>margin box의 하단부분이 baseline으로 잡힌다.</li>
-</ul>
-</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-23T09:21:20.000Z" title="2020-10-23T09:21:20.000Z">2020-10-23</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-23T11:26:24.036Z" title="2020-10-23T11:26:24.036Z">2020-10-23</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">5 minutes read (About 774 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/23/HTML-CSS-Fifth-Lecture/">TIL 20/10/23 HTML/CSS 다섯번째 강의</a></h1><div class="content"><h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 웹카페 클론 실습에서 main쪽 영역에 로그인창 CSS 디자인과 그 밑에 링크들 그리고 웹 관련 용어 섹션에 대해 배웠다. 로그인창 CSS 설계만하고 어제 강의를 마쳤는데 어젯밤에 오늘 수업에서 했던 CSS디자인을 혼자 해보았다. 강사님이 가르쳐주신것과 내가 짠 코드를 비교하면서 들었는데 새로 알게 된 부분이 많았고 코드를 좀 더 간단하게 짜는 방법을 배웠다. 오늘도 배웠던 내용을 복습하고 다시 처음부터 혼자서 스스로 코드를 짜봐야겠다.</p>
-<hr>
-<h2 id="CSS-Preprocessors"><a href="#CSS-Preprocessors" class="headerlink" title="CSS Preprocessors"></a>CSS Preprocessors</h2><ul>
-<li>CSS 전처리기는 자신만의 유니크한 syntax로 CSS를 생성하는 프로그램이다.</li>
-<li>프로젝트의 규모가 커짐에 따라 웹페이지도 커지고 복잡해짐에 따라 스타일도 많이사용하고 불필요한 선택자들의 사용으로 코드가 복잡해질 수 있고 그로인해 유지보수가 어려워질 수 있다. 이때 이러한 불편한점과 한계를 보완하기위해 등장한게 CSS 전처리기이다.</li>
-<li>CSS 전처리기에는 다음과 같은 종류들이 있다.<ul>
-<li><a target="_blank" rel="noopener" href="https://sass-lang.com/">Sass</a></li>
-<li><a target="_blank" rel="noopener" href="http://lesscss.org/">Less</a></li>
-<li><a target="_blank" rel="noopener" href="https://stylus-lang.com/">Stylus</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h2><ul>
-<li>XHTML에서는 <code>&lt;form&gt;&lt;/form&gt;</code>안에 <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code>과 <code>&lt;legend&gt;&lt;/legend&gt;</code>가 필수. HTML 4.01,5에서는 필수는 아님.</li>
-<li>접근성 차원에서 <code>&lt;input&gt;</code>같은 입력서식은 <code>&lt;label&gt;&lt;/label&gt;</code>을 무조건 1:1 대응해서 사용한다.</li>
-<li>글로벌어트리뷰트(전역속성)<ul>
-<li><code>id</code></li>
-<li><code>class</code></li>
-<li><code>lang</code></li>
-<li><code>data-*</code></li>
-<li><code>style</code></li>
-<li><code>title</code></li>
-</ul>
-</li>
-<li>em - 현재글자크기 비례. 사이즈 단위</li>
-<li><code>text-align</code>은 block요소에 적용해야한다. 그러면 그안에 inline요소들이 정렬된다.</li>
-<li><code>vertical-align</code>은 inline 요소에 적용해야된다.</li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>을 사용할때는 padding값을 재지정해주는게 좋다. 브라우저마다 padding값이 다르기 때문이다.</li>
-<li>HTML 5.2이상 부터는 <code>&lt;dl&gt;&lt;/dl&gt;</code>태그 안에도 <code>&lt;div&gt;&lt;/div&gt;</code>태그 사용이 가능하다. 그러나 <code>&lt;dt&gt;&lt;/dt&gt;</code>하나의 요소만 <code>&lt;div&gt;&lt;/div&gt;</code>로 묶는건 불가능하고 <code>&lt;dt&gt;&lt;dd&gt;&lt;/dd&gt;&lt;/dt&gt;</code> 전체를 묶을때만 사용할 수 있다.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-위와 같은 방법은 사용할 수 없다.<br><code>&lt;div&gt;&lt;/div&gt;</code>를 사용하려면 아래와 같이 사용해야된다.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dd</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<code>&lt;dl&gt;&lt;/dl&gt;</code>내의 <code>&lt;div&gt;&lt;/div&gt;</code>에는 <code>&lt;dt&gt;&lt;/dt&gt;</code>과 <code>&lt;dl&gt;&lt;/dl&gt;</code>외에는 다른요소가 들어올 수 없다.</li>
-</ul>
-<hr>
-<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
-<li>폰트의 자간(글자간의 horizontal 너비)를 설정 해주는 css 프로퍼티는 <code>letter-spacing</code></li>
-<li><code>&lt;input&gt;</code>이나 <code>&lt;button&gt;&lt;/button&gt;</code> 요소를 사용하면서 type 어트리뷰트 값으로 <code>submit</code>을 선언하면 브라우저는 어트리뷰트로 설정된 값을 가지고 서버에 request한다.</li>
-<li><pre><code class="css">selector &#123;
-  background-color: red;
-  background: url(&quot;images/logo.png&quot;) no-repeat top right;
-&#125;</code></pre>
-위와 같이 코드가 있을때 첫째 줄 코드가 무시된거처럼 동작한 이유는 단축속성에 지정되지 않은 값은 initial 값이 되기 때문이다. 이전에 정의한 값도 initial값으로 재정의한다.</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-22T09:28:20.000Z" title="2020-10-22T09:28:20.000Z">2020-10-22</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-22T11:59:25.310Z" title="2020-10-22T11:59:25.310Z">2020-10-22</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">6 minutes read (About 952 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/22/HTML-CSS-Fourth-Lecture/">TIL 20/10/21 HTML/CSS 네번째 강의</a></h1><div class="content"><h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 웹카페 클론 실습중 visual에 보여지는 애니메이션 부분과 메인섹션 부분에 로그인창 html구조 짜는법 그리고 로그인창 CSS 설계에 대해서 배웠다. animation의 속성중 모르는 것들을 많이 배웠고 form과 그안에 fieldset, legend에 대해서도 배웠다. 공부할 시간이 모자라서 오늘 아침부터 한시간씩 일찍 오기 시작했다. 그전날 수업에서 해봤던 내용들을 다시 처음부터 html설계와 css입히는 연습을 해야겠다는 필요성을 느껴서이다. TIL도 중요하지만 코드를 복습하고 다시 적용해보는 연습을 더해야겠다.</p>
-<hr>
-<h2 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h2><ul>
-<li><code>animation</code>은 요소에 적용되는 CSS 스타일을 다른 CSS 스타일로 부드럽게 적용 (전환)시켜준다.</li>
-<li><code>animation</code>의 속성은 다음과 같다.<ul>
-<li><code>@keyframes</code> : animation이 어떻게 돌아갈지 코드를 명시하는 부분이다.</li>
-<li><code>animation</code> : animation의 단축속성이다.</li>
-<li><code>animation-delay</code> : animation의 요소가 불러와지고 언제 시작할지 정한다.</li>
-<li><code>animation-direction</code> : animation이 끝나고 처음부터 다시 시작할지 역방향으로 시작할지 정한다.</li>
-<li><code>animation-duration</code> : animation이 완전한 한 싸이클을 도는 시간을 명시해준다.</li>
-<li><code>animation-fill-mode</code> : animation이 실행 전과 후에 대상에 스타일을 지정하는 방식을 설정한다. 속성값이 forwards면 <code>@keyframes</code>에 설정된 마지막 값을 유지한다. backwards는 <code>@keyframes</code>의 설정된 초기값을 유지한다.</li>
-<li><code>animation-iteration-count</code> : animation이 몇 번 실행되어야하는지 명시해준다. 속성값으로 <code>infinite</code>을 설정해주면 무한 반복된다.</li>
-<li><code>animation-name</code> : animation의 중간상태를 지정해준다. 중간상태는 <code>@keyframes</code>을 사용하여 설정한다.</li>
-<li><code>animation-play-state</code> : animation을 멈추거나 다시시작할 수 있다.</li>
-<li><code>animation-timing-function</code> : animation의 전환을 어떤 시간 간격으로 움직일지 지정한다.</li>
-</ul>
-</li>
-<li><code>animation-name</code>과 <code>animation-duration</code>은 필수 속성 이다.</li>
-</ul>
-<hr>
-<h2 id="form-fieldset-legend"><a href="#form-fieldset-legend" class="headerlink" title="form, fieldset, legend"></a>form, fieldset, legend</h2><h3 id="form"><a href="#form" class="headerlink" title="form"></a>form</h3><ul>
-<li><code>&lt;form&gt;&lt;/form&gt;</code> 태그는 사용자로 부터 입력받는 입력양식을 감싸는 태그이다.<ul>
-<li>ex:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;#&quot;</span> <span class="attr">method</span>=<span class="string">&quot;POST&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userEmail&quot;</span> <span class="attr">name</span>=<span class="string">&quot;userEmail&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;이메일 주소&quot;</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userPw&quot;</span> <span class="attr">name</span>=<span class="string">&quot;userPw&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;8자리 이상&quot;</span> <span class="attr">required</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li><code>&lt;form&gt;&lt;/form&gt;</code>은 입력된 데이터를 한번에 서버로 전송하는 역할을 한다.</li>
-<li><code>&lt;form&gt;&lt;/form&gt;</code> 자체에다가는 css디자인을 잘 하지 않는다.</li>
-</ul>
-<h3 id="fieldset"><a href="#fieldset" class="headerlink" title="fieldset"></a>fieldset</h3><ul>
-<li><code>&lt;fieldset&gt;&lt;/fieldset&gt;</code>는 사용자 입력을 받는 <code>&lt;form&gt;&lt;/form&gt;</code>안의 컨트롤들을 하나의 그룹으로 묶는 역할을 한다.<ul>
-<li>ex:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">method</span>=<span class="string">&quot;POST&quot;</span> <span class="attr">action</span>=<span class="string">&quot;https://formspree.io/seulbinim@gmail.com&quot;</span> <span class="attr">class</span>=<span class="string">&quot;login-form&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">fieldset</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">legend</span>&gt;</span>회원 로그인 폼<span class="tag">&lt;/<span class="name">legend</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userEmail&quot;</span>&gt;</span>아이디<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;email&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userEmail&quot;</span> <span class="attr">name</span>=<span class="string">&quot;userEmail&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;이메일 주소&quot;</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;userPw&quot;</span>&gt;</span>비밀번호<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;password&quot;</span> <span class="attr">id</span>=<span class="string">&quot;userPw&quot;</span> <span class="attr">name</span>=<span class="string">&quot;userPw&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;8자리이상&quot;</span> <span class="attr">required</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">class</span>=<span class="string">&quot;btn-login&quot;</span>&gt;</span>로그인<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">fieldset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="legend"><a href="#legend" class="headerlink" title="legend"></a>legend</h3><ul>
-<li><code>&lt;fieldset&gt;&lt;/fieldset&gt;</code>의 제목역할을 한다. <code>&lt;fieldset&gt;&lt;/fieldset&gt;</code> 묶음의 성격 용도등을 나타내기도 한다.</li>
-</ul>
-<hr>
-<h2 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h2><ul>
-<li>요소 박스내에서는 <code>::before</code>와 <code>::after</code>는 하나밖에 사용못한다. (before의 before는 못만들어냄)</li>
-<li>html에서 &amp;표시를 표현하고 싶으면 <code>&amp;amp;</code></li>
-<li>투명도를 정할때 <code>opacity</code>를 사용하면 배경값까지 다 흐리게 만들어진다. 글자만 흐리게하려면 <code>color: rgba();</code>를 사용하자.</li>
-<li>요소를 이동하는 방법 4가지:<ul>
-<li><code>transform: translate();</code></li>
-<li><code>margin: ;</code></li>
-<li><code>padding: ;</code></li>
-<li><code>position: ;</code></li>
-</ul>
-</li>
-<li><code>background-image</code>는 먼저 만든 이미지가 위에 놓인다.</li>
-<li>id값을 네이밍할때는 camelCase로 하자.</li>
-<li><code>text-indent</code>는 inline요소에서 사용하지 못한다.</li>
-</ul>
-<hr>
-<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
-<li><code>position: absolute;</code> 로 선언된 요소의 display 프로퍼티 값은 <code>block</code>이 된다.</li>
-<li><code>position: absolute;</code> 로 선언된 요소의 위치를 offset으로 설정할 때, offset 값의 기준은 해당 요소의 가장 가까운 상위 요소 중 <code>position</code> 프로퍼티 값이 <code>relative</code> 뿐만 아니라 <code>fixed</code>, <code>absolute</code>, <code>sticky</code>로 선언된 요소이다.</li>
-<li>현재 위치한 디렉토리를 원격 저장소(origin)의 브랜치(main)에 연결하는 깃 명령어:<br><code>git remote add origin &#123;github주소&#125;</code></li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-21T11:01:12.000Z" title="2020-10-21T11:01:12.000Z">2020-10-21</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-21T12:34:56.818Z" title="2020-10-21T12:34:56.818Z">2020-10-21</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">6 minutes read (About 850 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/21/HTML-CSS-Third-Lecture/">TIL 20/10/21 HTML/CSS 세번째 강의</a></h1><div class="content"><h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 패스트캠퍼스에서 html/css 세번째 강의 시간 이였다. 오늘은 웹카페 클론 실습중 header에 navigation에 메인메뉴를 만들어 정렬하는 것을 배웠다. inline-block, block, flex에 대해도 배웠는데 아직 개념정리가 잘 안된 것 같아 더 구글링해서 찾아봐야겠다. 그리고 주말에 사전온라인강의도 다시들어보고 노트테이킹을 열심히 해놔서 개념을 머리 속에 굳혀놔야겠다.</p>
-<hr>
-<h2 id="button-amp-a-tag"><a href="#button-amp-a-tag" class="headerlink" title="button &amp; a tag"></a>button &amp; a tag</h2><ul>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>은 inline block</li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>의 <code>box-sizing</code>의 default값은 border-box이다.</li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>이 눌려졌는지 안눌렸는지 장애인들을 위한 알려주는 속성은 <code>aria-pressed</code>, 팝업이 있는지 없는지 <code>aria-popup</code>, 팝업이 펼쳐졌는지 안펼쳐졌는지는 <code>aria-expanded</code></li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>의 default type은 submit이다.</li>
-<li><code>&lt;a&gt;&lt;/a&gt;</code> tag의 <code>box-sizing</code>의 default 값은 content-box이다.</li>
-<li><code>&lt;a&gt;&lt;/a&gt;</code> tag를 버튼으로 사용하려면 <code>role=&quot;button&quot;</code>이라는 프로퍼티를 꼭 넣어주자. 왜냐하면 일반적으로 <code>&lt;a&gt;&lt;/a&gt;</code> tag는 클릭시 어디로 이동할거라고 예상하는데 버튼을 명시해줌으로써 클릭됬을때 이벤트가 일어날거라고 알려줄 수 있기 때문.</li>
-</ul>
-<hr>
-<h2 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h2><ul>
-<li><code>&lt;nav&gt;&lt;/nav&gt;</code>는 주요메뉴나 주요링크를 포함하는 태그</li>
-<li><code>&lt;nav&gt;&lt;/nav&gt;</code>의 제목: 구조상으로는 필요하지만 보여지지 않아야 하는것 (class이름을 보통 readable-hidden, a11y-hidden, off-screen등으로 한다.)<ul>
-<li>Example:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;navigation&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;a11y-hidden&quot;</span>&gt;</span>메인 메뉴<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li>요소들을 키보드 tab버튼으로 접근하려면 <code>&lt;a&gt;&lt;/a&gt;</code>거나 <code>&lt;form&gt;&lt;/form&gt;</code>이거나 속성값으로 <code>tableindex=&quot;0&quot;</code>를 줘야한다.</li>
-<li><code>git push origin &lt;your_branch_name&gt; -f</code>는 git push를 강제로 한다. 보통 GitHub에서 내용을 수정하고 pull을 안하고 로컬레포에서 수정을 하고 push를 할때 오류가 나타나는데 -f를 쓰면 강제로 GitHub remote repo에 있는 내용을 덮어쓴다.</li>
-<li>요소의 위쪽에 선을 그리는 방법 3가지:<ul>
-<li>background: linear-gradient 함수</li>
-<li>box-shadow</li>
-<li>border</li>
-</ul>
-</li>
-<li><code>border: </code>속성중 currentColor를 사용하면 본문의 폰트 색깔을 가져온다.</li>
-<li>윤곽체를 쓰려면 text-shadow를 사용할 수 있다.<ul>
-<li>Example:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">selector</span> &#123;</span><br><span class="line">  <span class="attribute">text-shadow</span>: <span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>, <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>, -<span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>, <span class="number">0</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/main.css">
 
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
-<li>상속이 되는 css 프로퍼티:<ul>
-<li>font</li>
-<li>color</li>
-<li>text-align</li>
-<li>visibility</li>
-<li>opacity</li>
-<li>line-height</li>
-<li>white-space</li>
-</ul>
-</li>
-<li><code>.a11y-hidden</code><ul>
-<li>구현하는 코드:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a11y-hidden</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">clip-path</span>: <span class="built_in">polygon</span>(<span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">0</span>);  <span class="comment">/* x, y의 값을 다 0 으로 설정해서 요소를 안보이게 만들어준다.*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><code>.a11y-hidden</code>을 처리해주는 이유: 구조적으로는 필요한 요소가 시각적으로는 표현될 필요가 없는 경우에 사용한다. 예전에는 <code>position: absolute;</code>를 주고 <code>top: -9999px</code>을 줘서 위로 날려버렸는데, 스크린리더를 사용하는 저시력자들은 갑자기 화면이 위쪽으로 이동되는 경험을 해서 <code>.ally-hidden</code>을 사용해서 구조적으로는 필요한 곳에 위치하게 하되 시각적으로는 지워주는 방식을 요즘은 사용한다.</li>
-</ul>
-</li>
-<li><code>position: absolute;</code>는 position값이 static이 아닌 가장 가까운 상위요소의 위치에 배치하게 된다. 단, 조상의 position값이 모두 기본값인 static이라면, 원래 normal flow에서 가지는 위치에 위치하게된다.</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-20T10:59:15.000Z" title="2020-10-20T10:59:15.000Z">2020-10-20</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-21T11:20:07.063Z" title="2020-10-21T11:20:07.063Z">2020-10-21</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">5 minutes read (About 779 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/20/HTML-CSS-Second-Lecture/">TIL 20/10/20 HTML/CSS 두번째 강의</a></h1><div class="content"><h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 두번째 강의 였다. 강의에서 float, display:flex, div같은 block요소들 가운데로 센터 시키는법, float를 해제 시키는 방법, position등에 대해 배웠다.<br>온라인 강의를 들었을때 몰랐거나 애매했던 부분들도 어느정도 해소가 되었고 아직도 모르는 부분은 구글링을 해서 더 찾아봐야겠다. 모르는 부분이 있다고 포기하고 좌절하지말고 좀더 검색하는 습관을 키워야겠다.</p>
-<hr>
-<h2 id="display-flex"><a href="#display-flex" class="headerlink" title="display: flex"></a>display: flex</h2><ul>
-<li>flex는 모던 브라우저에서만 지원한다. <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">flex MDN</a></li>
-<li><code>flex-flow</code>는 <code>flex-direction</code>과 <code>flex-wrap</code>의 단축속성이다.<ul>
-<li><code>flex-direction</code>는 flex item의 주축을 설정한다<ul>
-<li>값으로는 <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code>가 있다.</li>
-<li><code>flex-direction</code>이 <code>row</code>이면 <code>justify-content</code>는 수평정렬, <code>align-items</code>는 수직정렬 반대로 <code>column</code>이면 <code>justify-content</code>가 수직정렬, <code>align-items</code>가 수평정렬이 된다.</li>
-</ul>
-</li>
-<li><code>flex-wrap</code>는 flex item의 줄바꿈을 설정한다.<ul>
-<li>값으로는 <code>nowrap</code>: 한 줄에 표시, <code>wrap</code>: 줄바꿈 허용(item을 여러 줄로 묶음), <code>wrap-reverse</code>: item을 wrap의 역 방향으로 여러 줄로 묶음 이 있다.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Example:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">selector</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-flow</span>: column nowrap;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-모던브라우저에서 수평에서 센터로 만드는방법</li>
-<li><code>justify-content</code>에 들어가는 값들<br><img src="https://heropy.blog/images/screenshot/css-flexible-box/flex-justify-content.jpg" alt="justify-content&#39;s values"></li>
-</ul>
-<hr>
-<h2 id="float"><a href="#float" class="headerlink" title="float"></a>float</h2><ul>
-<li>float는 구형 브라우저도 지원한다. <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float MDN</a></li>
-<li>float는 line box를 부모요소크기(padding을 제외한)로 하나 만든다. 그 기준으로 left던 right이던 정렬한다.<ul>
-<li>line box 범위를 벗어나면 float: left 나 right를 해도 그 밑으로 내려간다.</li>
-</ul>
-</li>
-<li>float를 해제하는 방법<ul>
-<li>1번:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-일때<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>2번:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-일때<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="Miscellaneous-information"><a href="#Miscellaneous-information" class="headerlink" title="Miscellaneous information"></a>Miscellaneous information</h2><ul>
-<li><code>html &#123;&#125;</code>에 폰트사이즈를 정해놓고 그 아래 요소들이 rem을 사용하면 폰트사이즈 조작이 좀더 용이해짐</li>
-<li>rgb 16진수 방법 <code>#RRGGBB</code></li>
-<li>색상을 정할때 rgba 함수를 권장한다</li>
-<li><code>margin: 0 auto;</code> 나머지 좌우 길이를 반반으로 나눠서 중앙에 배치한다.</li>
-<li><code>margin: 0 0 0 auto;</code> 요소가 오른쪽 정렬됨</li>
-<li><code>&lt;img/&gt;</code>의 alt 속성은 그냥 이미지 자체의 개념을 적어주어라. 로고라고 logo라고 적지말것.</li>
-<li>VS code shortcuts:<ul>
-<li><code>cmd + opt + a</code>: 약어로 개별줄 wrapping</li>
-<li><code>cmd + opt + m</code>: 수식평가</li>
-<li><code>opt + 방향키</code>: 그 줄의 text를 위아래 방향으로 옮기기</li>
-</ul>
-</li>
-<li>position: absolute;<ul>
-<li>float요소처럼 다른 요소위에 떠있다.</li>
-<li>자기 가장 가까운 상위요소에 의해 top, left, right, bottom offset을 정한다. (상위요소의 position이 static이 아니여야만함)</li>
-</ul>
-</li>
-<li>position: relative;<ul>
-<li>normal flow를 유지함</li>
-</ul>
-</li>
-<li>a tag의 color는 webkit한테 상속받은 user agent stylesheet의 영향을 받는다<ul>
-<li>color: inherit로 해결가능</li>
-</ul>
-</li>
-</ul>
-<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
-<li><code>&lt;img/&gt;</code> inline 요소</li>
-<li><code>&lt;label&gt;</code> inline 요소</li>
-<li><code>&lt;input/&gt;</code> inline-block 요소</li>
-<li><code>&lt;video&gt;</code> inline 요소</li>
-<li><code>&lt;table&gt;</code> table 요소</li>
-<li><code>&lt;a&gt;</code> inline 요소</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-19T09:36:22.000Z" title="2020-10-19T09:36:22.000Z">2020-10-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-19T11:13:17.657Z" title="2020-10-19T11:13:17.657Z">2020-10-19</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">6 minutes read (About 865 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/19/HTML-CSS-First-Lecture/">TIL 20/10/19 HTML/CSS 첫 강의</a></h1><div class="content"><h1 id="내가-오늘-배운-것들"><a href="#내가-오늘-배운-것들" class="headerlink" title="내가 오늘 배운 것들"></a>내가 오늘 배운 것들</h1><p>오늘은 패스트캠퍼스 프론트엔드 개발 스쿨 18기 과정에서 HTML/CSS 첫강의를 들었다. 강사님이 처음이라 HTML에 대한 전반적인 개념과 역사에 대해 설명해주셨고 HTML 구조 잡는법, naming convention과 Visual studio code의 extension 설치, 단축키등을 배워 보았다.<br>첫주 동안은 자습만 해서 지루했었는데, 이번주부터 실강을 들으니 흥미가 더욱 생기고 집중이 잘되었다. 하루하루 빠지지 않고 복습을 열심히 해야겠다.</p>
-<hr>
-<h2 id="Introduction-to-HTML5"><a href="#Introduction-to-HTML5" class="headerlink" title="Introduction to HTML5"></a>Introduction to HTML5</h2><ul>
-<li>HTML5가 제일 최신표준</li>
-<li>XHTML 1.0이 XHTML에서 표준</li>
-<li>HTML 4.01도 표준</li>
-<li>XHTML이 더 엄격한 룰을 가지고 있음</li>
-<li>HTML5는 Mark up과 API를 합친것</li>
-<li><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/HTML5">HTML5</a></li>
-</ul>
-<hr>
-<h2 id="HTML’s-API"><a href="#HTML’s-API" class="headerlink" title="HTML’s API"></a>HTML’s API</h2><ul>
-<li>Web storage: 브라우저에 데이터를 저장하기 위한 공간</li>
-<li>Web SQL Database/Indexed Database: 클라이언트에서 관리되는 데이타베이스를 제어</li>
-<li>Application Cache: 웹 애플리케이션을 오프라인에서 사용하는 데 필요한 리소스 (HTML, CSS, JS, 이미지 등)를 클라이언트 쪽에 캐시하기 위한 기능</li>
-<li>Web Workers: 메인 스레드(UI)와 독립적인 백그라운드 프로세 스로 처리되는 스크립트</li>
-<li>Web Socket: 웹 브라우저와 서버 간 양방향 전이중 통신(Full<br>Duplex)을 구현한 Web Socket 프로토콜을 이용할 수 있는 API</li>
-<li>Notifications API: 운영 체제에 독립적인 플랫폼 수준의 알림<br>메시지를 보여주는 API</li>
-<li>File API(Desktop Drag-In, Desktop Drag-Out): 로컬 파일 시스템과 웹 브라우저 간에 파일을 주고받을 수 있음.</li>
-<li>Geolocation: 웹 브라우저가 설치되어 있는 단말기(데스크톱,<br>스마트폰 등)의 GPS 장치를 구동하여 현재 위치 정보를 받아오<br>는 기능을 정의한 API</li>
-<li>Device Orientation: 단말기의 센서를 이용하여 현재 방향과<br>기울기가 같은 정보를 구할 수 있는 API</li>
-<li>Speech Input: 단말기의 마이크로폰을 이용하여 음성을 입력<br>받은 후 이를 문자로 바꿔주는 새로운 입력 방식임</li>
-<li>Drag &amp; Drop: HTML4.01에서는 Drag &amp; Drop을 구현하기 위해 직접 자바스크립트로 개발하거나 UI 관련 자바스크립트 라이브러리를 이용해<br>야 했지만, HTML5에서는 Drag &amp; Drop API를 이용하여 쉽게 구<br>현할 수 있음</li>
-</ul>
-<hr>
-<h2 id="Web-Structure"><a href="#Web-Structure" class="headerlink" title="Web Structure"></a>Web Structure</h2><ul>
-<li>3단 구조 헤더(내비게이션) - 콘텐츠 - 푸터</li>
-<li>4단구조 헤더 - 내비게이션 - 콘텐츠 - 푸터</li>
-<li>논리적인 순서로 짤것</li>
-<li>시맨틱 마크업: 가장 기계가 이해하기 쉽게 알려주는 것, 기계처리가 가능한 것, 사람도 이해할 수 있는것</li>
-<li><a target="_blank" rel="noopener" href="http://getbem.com/naming/">BEM naming convention</a><ul>
-<li>__: 안에 포함되어있다, ~의 일부분이다</li>
-<li>–: ~의 상태</li>
-<li>-: 일반적인 작명, Kebab case</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="General-information-about-HTML5"><a href="#General-information-about-HTML5" class="headerlink" title="General information about HTML5"></a>General information about HTML5</h2><ul>
-<li>header랑 footer는 여러번 사용될 수 있다.</li>
-<li>main은 한번만 사용 가능하다.</li>
-<li>grid는 컨텐츠 배치에 유용하다 하지만 한국에서는 IE11을 많이 쓰기 때문에 grid를 많이 안쓰는편</li>
-</ul>
-<hr>
-<h2 id="VS-code-hot-key"><a href="#VS-code-hot-key" class="headerlink" title="VS code hot key"></a>VS code hot key</h2><ul>
-<li>cmd + shift + k: 현재 선택된 줄에 있는 모든 텍스트 삭제</li>
-</ul>
-<hr>
-<h2 id="Font"><a href="#Font" class="headerlink" title="Font"></a>Font</h2><ul>
-<li>serif: 삐침모양이 나와있는 글자모양</li>
-<li>Sans-serif: 둥글둥글한 모양</li>
-<li>Noto sans: 본고딕</li>
-</ul>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2020-10-16T07:31:04.000Z" title="2020-10-16T07:31:04.000Z">2020-10-16</time></span><span class="level-item">Updated&nbsp;<time dateTime="2020-10-16T11:55:09.816Z" title="2020-10-16T11:55:09.816Z">2020-10-16</time></span><span class="level-item"><a class="link-muted" href="/categories/dev/">dev</a><span> / </span><a class="link-muted" href="/categories/dev/writing/">writing</a></span><span class="level-item">5 minutes read (About 804 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2020/10/16/My-First-github-Pages/">TIL 20/10/16 Bash 명령어, Vim, Git의 기초내용</a></h1><div class="content"><h1 id="내가-오늘-배운-것들"><a href="#내가-오늘-배운-것들" class="headerlink" title="내가 오늘 배운 것들"></a>내가 오늘 배운 것들</h1><h2 id="Bash-On-mac-it’s-zsh-commands"><a href="#Bash-On-mac-it’s-zsh-commands" class="headerlink" title="Bash(On mac, it’s zsh) commands"></a>Bash(On mac, it’s zsh) commands</h2><ul>
-<li><code>$ ls</code> list segment 디렉토리내의 파일들을 보여준다.</li>
-<li><code>$ ls -a</code> a 플래그가 붙으면 숨김폴더도 다보여준다.</li>
-<li><code>$ ls -l</code> 파일들의 상세정보까지 보여준다.</li>
-<li><code>$ mkdir &#123;만들 디렉토리의 이름&#125;</code> 디렉토리(폴더) 생성</li>
-<li><code>$ cd &#123;디렉토리이름&#125;</code> 체인지 디렉토리 디렉토리로의 이동을 한다.</li>
-<li><code>$ touch &#123;생성할 파일의 이름&#125;</code> 새로운 파일을 생성한다.</li>
-<li><code>$ pwd</code> Print Work Directory 내가 현재 있는 절대경로를 표시해준다.</li>
-<li><code>$ mv &#123;파일이름&#125; &#123;보낼위치&#125;</code> 파일을 보낼위치로 옮긴다.</li>
-<li><code>$ cp &#123;파일이름&#125; &#123;위치&#125;</code> 파일을 그위치로 복사해준다.</li>
-<li><code>$ mv &#123;파일이름&#125; &#123;파일이름&#125;</code> 파일 이름을 바꿔준다. (파일 포맷도 바꿀 수 있음)</li>
-<li><code>$ rm &#123;파일이름&#125;</code> 파일을 삭제해준다.</li>
-<li><code>$ rm -r</code> r 플래그는 recursive로서 디렉토리안에 오브젝트까지 삭제하고 디렉토리도 삭제 (디렉토리 삭제할때 사용)</li>
-<li><code>$ ^c</code> control + c 지금 하고 있는 작업 실행 중단</li>
-<li><code>$ chmod &#123;옵션&#125; &#123;8진수&#125; &#123;파일명&#125;</code> rwx의 권한 변경 (r = read, w = write, x = execute)</li>
-<li>알아두면 좋을팁: pptx, db, hwp와 같은 파일 (어플리케이션을 활용하여 만드는 파일들)은 <code>$ touch</code>로 만들어도 제대로 동작하지 않음.</li>
-<li>asterisk (*) &lt;- 모든을 의미함 (example. <code>$ rm server.*</code> &lt;- server로 시작하는 파일의 모든포맷을 삭제)</li>
-</ul>
-<h2 id="Vim-simple-commands"><a href="#Vim-simple-commands" class="headerlink" title="Vim simple commands"></a>Vim simple commands</h2><ul>
-<li><code>$ vi &#123;edit 하고 싶은 파일명&#125;</code> edit하고 싶은 파일을 vim editor로 열어준다.</li>
-<li>vim 처음 open하면 normal mode</li>
-<li>normal mode에서 i 누르면 insert mode로서 editor안에 edit시작 가능.</li>
-<li>normal mode에서 o 누르면 open new line (다음 줄에 글쓰기), 대문자 O를 사용하면 윗줄에 글쓰기</li>
-<li>normal mode에서 h,j,k,l은 커서 방향이동을 의미, 순서대로 왼쪽 아래 위 오른쪽 방향 순서</li>
-</ul>
-<h2 id="Simple-git-commands-and-some-tips"><a href="#Simple-git-commands-and-some-tips" class="headerlink" title="Simple git commands and some tips"></a>Simple git commands and some tips</h2><ul>
-<li><code>$ git config --global user.name &quot;&#123;github username&#125;”</code> 유저네임을 git configuration에 설정 해준다.</li>
-<li><code>$ git config --global user.email &quot;&#123;github email address&#125;&quot;</code> 이메일주소 (아이디)를 git configuration에 설정 해준다.</li>
-<li><code>$ git config --global core.editor &quot;vim&quot;</code> 에디터 설정을 git configuration에 저장해준다.</li>
-<li><code>$ git status</code> git repo인지 알아보는 방법, status도 알려준다.</li>
-<li>.git 파일을 지우면 원래대로 돌아온다</li>
-<li><code>$ git remote add origin &#123;github주소&#125;</code> 로컬 repo에서 remote repo로 연결을 한다.</li>
-<li><code>$ git remote -v</code> github주소 보여줌</li>
-<li><code>$ git add 파일이름</code> 스테이지로 옮겨줌</li>
-<li><code>$ git commit</code> 스테이지에 옮겨진 파일들은 로컬 repo에 기록해준다.</li>
-<li><code>$ git push origin master</code> mater branch로 local repo에 있는 내용들을 remote repo로 push해준다.</li>
-</ul>
-<h2 id="How-to-start-with-git-clone"><a href="#How-to-start-with-git-clone" class="headerlink" title="How to start with git clone"></a>How to start with <code>git clone</code></h2><ol>
-<li>GitHub repo에서 초록색 Code 버튼을 클릭한다.</li>
-<li>https 주소를 옆에 서류문서 아이콘을 클릭해서 복사한다.</li>
-<li>bash로 돌아와서 <code>git clone</code>을 하고싶은 폴더로 이동한다.</li>
-<li><code>$ git clone https://복사한주소</code>를 입력한다.</li>
-</ol>
-<h3 id="Conventional-Commits"><a href="#Conventional-Commits" class="headerlink" title="Conventional Commits"></a>Conventional Commits</h3><p><a target="_blank" rel="noopener" href="https://www.conventionalcommits.org/en/v1.0.0/">Reference</a></p>
-<ul>
-<li>feat: features</li>
-<li>docs: documentation</li>
-<li>conf: configuration</li>
-<li>fix: bug-fix</li>
-<li>ci: continuous integration</li>
-<li>test: test codes</li>
-<li>hot-fix: hot-fix</li>
-<li>refactor: refactoring</li>
-</ul>
-</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Your name"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Your name</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Your location</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">7</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/ppoffice"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/dev/"><span class="level-start"><span class="level-item">dev</span></span><span class="level-end"><span class="level-item tag">7</span></span></a><ul><li><a class="level is-mobile" href="/categories/dev/writing/"><span class="level-start"><span class="level-item">writing</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-25T08:48:14.000Z">2020-10-25</time></p><p class="title"><a href="/2020/10/25/HTML-CSS-First-Weekend-Study/">TIL 20/10/25 일요일 자습</a></p><p class="categories"><a href="/categories/dev/">dev</a> / <a href="/categories/dev/writing/">writing</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-23T09:21:20.000Z">2020-10-23</time></p><p class="title"><a href="/2020/10/23/HTML-CSS-Fifth-Lecture/">TIL 20/10/23 HTML/CSS 다섯번째 강의</a></p><p class="categories"><a href="/categories/dev/">dev</a> / <a href="/categories/dev/writing/">writing</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-22T09:28:20.000Z">2020-10-22</time></p><p class="title"><a href="/2020/10/22/HTML-CSS-Fourth-Lecture/">TIL 20/10/21 HTML/CSS 네번째 강의</a></p><p class="categories"><a href="/categories/dev/">dev</a> / <a href="/categories/dev/writing/">writing</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-21T11:01:12.000Z">2020-10-21</time></p><p class="title"><a href="/2020/10/21/HTML-CSS-Third-Lecture/">TIL 20/10/21 HTML/CSS 세번째 강의</a></p><p class="categories"><a href="/categories/dev/">dev</a> / <a href="/categories/dev/writing/">writing</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2020-10-20T10:59:15.000Z">2020-10-20</time></p><p class="title"><a href="/2020/10/20/HTML-CSS-Second-Lecture/">TIL 20/10/20 HTML/CSS 두번째 강의</a></p><p class="categories"><a href="/categories/dev/">dev</a> / <a href="/categories/dev/writing/">writing</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2020/10/"><span class="level-start"><span class="level-item">October 2020</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/CSS/"><span class="tag">CSS</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/FirstLecture/"><span class="tag">FirstLecture</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HTML/"><span class="tag">HTML</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/blog/"><span class="tag">blog</span><span class="tag">7</span></a></div><div class="control"><a class="tags has-addons" href="/tags/gitclone/"><span class="tag">gitclone</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="BC의 코딩그라운드" height="28"></a><p class="is-size-7"><span>&copy; 2020 Bongchul Sin</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" async></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
-            article: {
-                highlight: {
-                    clipboard: true,
-                    fold: 'unfolded'
-                }
-            }
-        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
-      window.cookieconsent.initialise({
-        type: "info",
-        theme: "edgeless",
-        static: false,
-        position: "bottom-left",
-        content: {
-          message: "This website uses cookies to improve your experience.",
-          dismiss: "Got it!",
-          allow: "Allow cookies",
-          deny: "Decline",
-          link: "Learn more",
-          policy: "Cookie Policy",
-          href: "https://www.cookiesandyou.com/",
-        },
-        palette: {
-          popup: {
-            background: "#edeff5",
-            text: "#838391"
-          },
-          button: {
-            background: "#4b81e8"
-          },
-        },
-      });
-    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
-            if (typeof $.fn.lightGallery === 'function') {
-                $('.article').lightGallery({ selector: '.gallery-item' });
-            }
-            if (typeof $.fn.justifiedGallery === 'function') {
-                if ($('.justified-gallery > p > .gallery-item').length) {
-                    $('.justified-gallery > p > .gallery-item').unwrap();
-                }
-                $('.justified-gallery').justifiedGallery();
-            }
-        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
-            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
-        });</script></body></html>
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"bcround.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="BC의 코딩그라운드">
+<meta property="og:url" content="https://bcround.github.io/categories/dev/writing/index.html">
+<meta property="og:site_name" content="BC의 코딩그라운드">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Bongchul Sin">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://bcround.github.io/categories/dev/writing/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Category: writing | BC의 코딩그라운드</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">BC의 코딩그라운드</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content category">
+            
+
+  
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">writing
+          <small>Category</small>
+        </h2>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-25T17:48:14+09:00"
+              content="2020-10-25">
+          10-25
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/25/HTML-CSS-First-Weekend-Study/" itemprop="url">
+            <span itemprop="name">TIL 20/10/25 일요일 자습</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-23T18:21:20+09:00"
+              content="2020-10-23">
+          10-23
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/23/HTML-CSS-Fifth-Lecture/" itemprop="url">
+            <span itemprop="name">TIL 20/10/23 HTML/CSS 다섯번째 강의</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-22T18:28:20+09:00"
+              content="2020-10-22">
+          10-22
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/22/HTML-CSS-Fourth-Lecture/" itemprop="url">
+            <span itemprop="name">TIL 20/10/21 HTML/CSS 네번째 강의</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-21T20:01:12+09:00"
+              content="2020-10-21">
+          10-21
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/21/HTML-CSS-Third-Lecture/" itemprop="url">
+            <span itemprop="name">TIL 20/10/21 HTML/CSS 세번째 강의</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-20T19:59:15+09:00"
+              content="2020-10-20">
+          10-20
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/20/HTML-CSS-Second-Lecture/" itemprop="url">
+            <span itemprop="name">TIL 20/10/20 HTML/CSS 두번째 강의</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-19T18:36:22+09:00"
+              content="2020-10-19">
+          10-19
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/19/HTML-CSS-First-Lecture/" itemprop="url">
+            <span itemprop="name">TIL 20/10/19 HTML/CSS 첫 강의</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-10-16T16:31:04+09:00"
+              content="2020-10-16">
+          10-16
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2020/10/16/My-First-github-Pages/" itemprop="url">
+            <span itemprop="name">TIL 20/10/16 Bash 명령어, Vim, Git의 기초내용</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Bongchul Sin</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bongchul Sin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
