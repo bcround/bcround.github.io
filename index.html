@@ -145,6 +145,110 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://bcround.github.io/2020/11/03/HTML-CSS-12th-Lecture/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bongchul Sin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BC의 코딩그라운드">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/03/HTML-CSS-12th-Lecture/" class="post-title-link" itemprop="url">TIL 20/11/03 HTML/CSS 열두번째 강의</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2020-11-03 19:28:33 / Modified: 20:59:29" itemprop="dateCreated datePublished" datetime="2020-11-03T19:28:33+09:00">2020-11-03</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/dev/" itemprop="url" rel="index"><span itemprop="name">dev</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/dev/writing/" itemprop="url" rel="index"><span itemprop="name">writing</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘 수업은 화면의 크기가 모바일일 때와 데스크탑일때의 다른 CSS디자인을 넣는 반응형 웹을 디자인 해보았다. 오늘도 컨디션이 안좋아 수업때 조금 힘들었지만 최대한 들어보려고 노력했었다. 반응형을 만들면서 많은 트릭들을 오늘 배운거같다. 아직 컨디션이 안좋은지 오늘은 무슨말을 써야될지 모르겠다… </p>
+<hr>
+<h2 id="CSS-variable-declaration"><a href="#CSS-variable-declaration" class="headerlink" title="CSS variable declaration"></a>CSS variable declaration</h2><ul>
+<li>CSS에서는 간단한 변수를 선언할 수 있다.<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  <span class="attribute">--theme-bright</span>: <span class="number">#fff</span>;</span><br><span class="line">  <span class="attribute">--theme-bright2</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">  <span class="attribute">--theme-default</span>: <span class="number">#14182c</span>;</span><br><span class="line">  <span class="attribute">--theme-primary</span>: <span class="number">#24388d</span>;</span><br><span class="line">  <span class="attribute">--theme-secondary</span>: <span class="number">#bae5fb</span>;</span><br><span class="line">  <span class="attribute">--theme-disable</span>: <span class="number">#878787</span>;</span><br><span class="line">  <span class="attribute">--color-gradient-start</span>: <span class="number">#263d83</span>;</span><br><span class="line">  <span class="attribute">--color-gradient-end</span>: <span class="number">#102457</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+이와 같이 :root라는 가상선택자를 이용해 최상위 엘리먼트에 선언하여 모든 엘리먼트에서 변수를 사용할 수 있게 한다.</li>
+<li>이러한 변수들을 사용하면 코드의 재사용성과 가독성을 늘릴 수 있어 유지보수하는데에도 큰 도움이 될 수 있다.</li>
+</ul>
+<hr>
+<h2 id="video"><a href="#video" class="headerlink" title="video"></a>video</h2><ul>
+<li><code>&lt;video&gt;</code>요소는 HTML문서에 동영상을 삽입하는 요소이다.<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">controls</span></span></span><br><span class="line"><span class="tag">       <span class="attr">src</span>=<span class="string">&quot;/media/cc0-videos/friday.mp4&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">track</span> <span class="attr">default</span></span></span><br><span class="line"><span class="tag">           <span class="attr">kind</span>=<span class="string">&quot;captions&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">srclang</span>=<span class="string">&quot;en&quot;</span></span></span><br><span class="line"><span class="tag">           <span class="attr">src</span>=<span class="string">&quot;/media/examples/friday.vtt&quot;</span> /&gt;</span></span><br><span class="line">    Sorry, your browser doesn&#x27;t support embedded videos.</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>src에는 삽입할 동영상 주소를 넣어준다</li>
+<li><code>&lt;track&gt;</code>에는 자막에 대한 정보를 넣어줄수 있다.</li>
+<li>controls는 비디오를 재생 및 정지 시킬수있는 컨트롤 패널을 부여해준다.</li>
+<li>구글크롬이나 사파리에서는 <code>autoplay</code> 속성을 사용하려면 <code>muted</code>라는 속성과 같이 사용해야 한다. 왜냐하면 정보통신보조기기를 사용하는 유저가 음소거 되지 않은 비디오를 듣게 되는 상황이면 정보통신보조기기가 읽어주는 텍스트와 비디오 오디오가 맞물릴수 있기 때문이다.</li>
+</ul>
+<hr>
+<h2 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h2><ul>
+<li>블록요소에 margin과 padding값에 %값을 주면, 그 블록요소의 컨테이닝 블록의 width값을 기준으로 계산된 값이 적용된다.</li>
+<li>svg코드는 이미지와 다르게 html이 불러와질때 같이 로딩되기 때문에 성능면에서도 우수</li>
+</ul>
+<hr>
+<h2 id="퀴즈에서-배운점"><a href="#퀴즈에서-배운점" class="headerlink" title="퀴즈에서 배운점"></a>퀴즈에서 배운점</h2><ul>
+<li><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;outer&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;inner&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.outer</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">550px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">550px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.inner</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">275px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">275px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>다음과 같은 코드가 있을때 position 속성과 transform 속성을 사용하여 inner박스를 outer박스 중앙에 위치하게 하려고한다.</p>
+<ul>
+<li>방법:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.inner</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">275px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">275px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+position absolute를 사용해서 top 50% left 50%를 주게되면 outer박스 정중앙에서 부터 inner박스의 왼쪽 상단이 위치하게 된다. 그러므로 transform translate -50% -50% 로 x값과 y값을 inner박스의 50%크기씩을 앞으로 당겨오면 inner박스가 정확히 중앙에 위치하게된다.</li>
+</ul>
+</li>
+<li><p>요소 뒤 영역에 흐림이나 색상 시프트 등 그래픽 효과를 적용할 수 있는 속성. 요소 “뒤”에 적용하기 때문에, 효과를 확인하려면 요소나 요소의 배경을 적어도 반투명하게는 설정해야 된다. 이 특성은 <code>backdrop-filter: blur()</code> 속성이다.</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://bcround.github.io/2020/11/03/HTML-CSS-11th-Lecture/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1096,129 +1200,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://bcround.github.io/2020/10/21/HTML-CSS-Third-Lecture/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Bongchul Sin">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BC의 코딩그라운드">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/21/HTML-CSS-Third-Lecture/" class="post-title-link" itemprop="url">TIL 20/10/21 HTML/CSS 세번째 강의</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2020-10-21 20:01:12 / Modified: 21:34:56" itemprop="dateCreated datePublished" datetime="2020-10-21T20:01:12+09:00">2020-10-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/dev/" itemprop="url" rel="index"><span itemprop="name">dev</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/dev/writing/" itemprop="url" rel="index"><span itemprop="name">writing</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 패스트캠퍼스에서 html/css 세번째 강의 시간 이였다. 오늘은 웹카페 클론 실습중 header에 navigation에 메인메뉴를 만들어 정렬하는 것을 배웠다. inline-block, block, flex에 대해도 배웠는데 아직 개념정리가 잘 안된 것 같아 더 구글링해서 찾아봐야겠다. 그리고 주말에 사전온라인강의도 다시들어보고 노트테이킹을 열심히 해놔서 개념을 머리 속에 굳혀놔야겠다.</p>
-<hr>
-<h2 id="button-amp-a-tag"><a href="#button-amp-a-tag" class="headerlink" title="button &amp; a tag"></a>button &amp; a tag</h2><ul>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>은 inline block</li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>의 <code>box-sizing</code>의 default값은 border-box이다.</li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>이 눌려졌는지 안눌렸는지 장애인들을 위한 알려주는 속성은 <code>aria-pressed</code>, 팝업이 있는지 없는지 <code>aria-popup</code>, 팝업이 펼쳐졌는지 안펼쳐졌는지는 <code>aria-expanded</code></li>
-<li><code>&lt;button&gt;&lt;/button&gt;</code>의 default type은 submit이다.</li>
-<li><code>&lt;a&gt;&lt;/a&gt;</code> tag의 <code>box-sizing</code>의 default 값은 content-box이다.</li>
-<li><code>&lt;a&gt;&lt;/a&gt;</code> tag를 버튼으로 사용하려면 <code>role=&quot;button&quot;</code>이라는 프로퍼티를 꼭 넣어주자. 왜냐하면 일반적으로 <code>&lt;a&gt;&lt;/a&gt;</code> tag는 클릭시 어디로 이동할거라고 예상하는데 버튼을 명시해줌으로써 클릭됬을때 이벤트가 일어날거라고 알려줄 수 있기 때문.</li>
-</ul>
-<hr>
-<h2 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h2><ul>
-<li><code>&lt;nav&gt;&lt;/nav&gt;</code>는 주요메뉴나 주요링크를 포함하는 태그</li>
-<li><code>&lt;nav&gt;&lt;/nav&gt;</code>의 제목: 구조상으로는 필요하지만 보여지지 않아야 하는것 (class이름을 보통 readable-hidden, a11y-hidden, off-screen등으로 한다.)<ul>
-<li>Example:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">&quot;navigation&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span> <span class="attr">class</span>=<span class="string">&quot;a11y-hidden&quot;</span>&gt;</span>메인 메뉴<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ul>
-</li>
-<li>요소들을 키보드 tab버튼으로 접근하려면 <code>&lt;a&gt;&lt;/a&gt;</code>거나 <code>&lt;form&gt;&lt;/form&gt;</code>이거나 속성값으로 <code>tableindex=&quot;0&quot;</code>를 줘야한다.</li>
-<li><code>git push origin &lt;your_branch_name&gt; -f</code>는 git push를 강제로 한다. 보통 GitHub에서 내용을 수정하고 pull을 안하고 로컬레포에서 수정을 하고 push를 할때 오류가 나타나는데 -f를 쓰면 강제로 GitHub remote repo에 있는 내용을 덮어쓴다.</li>
-<li>요소의 위쪽에 선을 그리는 방법 3가지:<ul>
-<li>background: linear-gradient 함수</li>
-<li>box-shadow</li>
-<li>border</li>
-</ul>
-</li>
-<li><code>border: </code>속성중 currentColor를 사용하면 본문의 폰트 색깔을 가져온다.</li>
-<li>윤곽체를 쓰려면 text-shadow를 사용할 수 있다.<ul>
-<li>Example:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">selector</span> &#123;</span><br><span class="line">  <span class="attribute">text-shadow</span>: <span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>, <span class="number">0</span> <span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>, -<span class="number">1px</span> <span class="number">0</span> <span class="number">0</span> <span class="number">#000</span>, <span class="number">0</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
-<li>상속이 되는 css 프로퍼티:<ul>
-<li>font</li>
-<li>color</li>
-<li>text-align</li>
-<li>visibility</li>
-<li>opacity</li>
-<li>line-height</li>
-<li>white-space</li>
-</ul>
-</li>
-<li><code>.a11y-hidden</code><ul>
-<li>구현하는 코드:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a11y-hidden</span> &#123;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">clip-path</span>: <span class="built_in">polygon</span>(<span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">0</span>, <span class="number">0</span> <span class="number">0</span>);  <span class="comment">/* x, y의 값을 다 0 으로 설정해서 요소를 안보이게 만들어준다.*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><code>.a11y-hidden</code>을 처리해주는 이유: 구조적으로는 필요한 요소가 시각적으로는 표현될 필요가 없는 경우에 사용한다. 예전에는 <code>position: absolute;</code>를 주고 <code>top: -9999px</code>을 줘서 위로 날려버렸는데, 스크린리더를 사용하는 저시력자들은 갑자기 화면이 위쪽으로 이동되는 경험을 해서 <code>.ally-hidden</code>을 사용해서 구조적으로는 필요한 곳에 위치하게 하되 시각적으로는 지워주는 방식을 요즘은 사용한다.</li>
-</ul>
-</li>
-<li><code>position: absolute;</code>는 position값이 static이 아닌 가장 가까운 상위요소의 위치에 배치하게 된다. 단, 조상의 position값이 모두 기본값인 static이라면, 원래 normal flow에서 가지는 위치에 위치하게된다.</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1288,7 +1269,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
