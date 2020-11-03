@@ -145,6 +145,156 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://bcround.github.io/2020/10/20/HTML-CSS-Second-Lecture/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Bongchul Sin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BC의 코딩그라운드">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/20/HTML-CSS-Second-Lecture/" class="post-title-link" itemprop="url">TIL 20/10/20 HTML/CSS 두번째 강의</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-10-20 19:59:15" itemprop="dateCreated datePublished" datetime="2020-10-20T19:59:15+09:00">2020-10-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-10-21 20:20:07" itemprop="dateModified" datetime="2020-10-21T20:20:07+09:00">2020-10-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/dev/" itemprop="url" rel="index"><span itemprop="name">dev</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/dev/writing/" itemprop="url" rel="index"><span itemprop="name">writing</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="내가-오늘-배우고-느낀점"><a href="#내가-오늘-배우고-느낀점" class="headerlink" title="내가 오늘 배우고 느낀점"></a>내가 오늘 배우고 느낀점</h1><p>오늘은 두번째 강의 였다. 강의에서 float, display:flex, div같은 block요소들 가운데로 센터 시키는법, float를 해제 시키는 방법, position등에 대해 배웠다.<br>온라인 강의를 들었을때 몰랐거나 애매했던 부분들도 어느정도 해소가 되었고 아직도 모르는 부분은 구글링을 해서 더 찾아봐야겠다. 모르는 부분이 있다고 포기하고 좌절하지말고 좀더 검색하는 습관을 키워야겠다.</p>
+<hr>
+<h2 id="display-flex"><a href="#display-flex" class="headerlink" title="display: flex"></a>display: flex</h2><ul>
+<li>flex는 모던 브라우저에서만 지원한다. <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex">flex MDN</a></li>
+<li><code>flex-flow</code>는 <code>flex-direction</code>과 <code>flex-wrap</code>의 단축속성이다.<ul>
+<li><code>flex-direction</code>는 flex item의 주축을 설정한다<ul>
+<li>값으로는 <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code>가 있다.</li>
+<li><code>flex-direction</code>이 <code>row</code>이면 <code>justify-content</code>는 수평정렬, <code>align-items</code>는 수직정렬 반대로 <code>column</code>이면 <code>justify-content</code>가 수직정렬, <code>align-items</code>가 수평정렬이 된다.</li>
+</ul>
+</li>
+<li><code>flex-wrap</code>는 flex item의 줄바꿈을 설정한다.<ul>
+<li>값으로는 <code>nowrap</code>: 한 줄에 표시, <code>wrap</code>: 줄바꿈 허용(item을 여러 줄로 묶음), <code>wrap-reverse</code>: item을 wrap의 역 방향으로 여러 줄로 묶음 이 있다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example:<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">selector</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-flow</span>: column nowrap;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+모던브라우저에서 수평에서 센터로 만드는방법</li>
+<li><code>justify-content</code>에 들어가는 값들<br><img src="https://heropy.blog/images/screenshot/css-flexible-box/flex-justify-content.jpg" alt="justify-content&#39;s values"></li>
+</ul>
+<hr>
+<h2 id="float"><a href="#float" class="headerlink" title="float"></a>float</h2><ul>
+<li>float는 구형 브라우저도 지원한다. <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">float MDN</a></li>
+<li>float는 line box를 부모요소크기(padding을 제외한)로 하나 만든다. 그 기준으로 left던 right이던 정렬한다.<ul>
+<li>line box 범위를 벗어나면 float: left 나 right를 해도 그 밑으로 내려간다.</li>
+</ul>
+</li>
+<li>float를 해제하는 방법<ul>
+<li>1번:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+일때<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>2번:<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+일때<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Miscellaneous-information"><a href="#Miscellaneous-information" class="headerlink" title="Miscellaneous information"></a>Miscellaneous information</h2><ul>
+<li><code>html &#123;&#125;</code>에 폰트사이즈를 정해놓고 그 아래 요소들이 rem을 사용하면 폰트사이즈 조작이 좀더 용이해짐</li>
+<li>rgb 16진수 방법 <code>#RRGGBB</code></li>
+<li>색상을 정할때 rgba 함수를 권장한다</li>
+<li><code>margin: 0 auto;</code> 나머지 좌우 길이를 반반으로 나눠서 중앙에 배치한다.</li>
+<li><code>margin: 0 0 0 auto;</code> 요소가 오른쪽 정렬됨</li>
+<li><code>&lt;img/&gt;</code>의 alt 속성은 그냥 이미지 자체의 개념을 적어주어라. 로고라고 logo라고 적지말것.</li>
+<li>VS code shortcuts:<ul>
+<li><code>cmd + opt + a</code>: 약어로 개별줄 wrapping</li>
+<li><code>cmd + opt + m</code>: 수식평가</li>
+<li><code>opt + 방향키</code>: 그 줄의 text를 위아래 방향으로 옮기기</li>
+</ul>
+</li>
+<li>position: absolute;<ul>
+<li>float요소처럼 다른 요소위에 떠있다.</li>
+<li>자기 가장 가까운 상위요소에 의해 top, left, right, bottom offset을 정한다. (상위요소의 position이 static이 아니여야만함)</li>
+</ul>
+</li>
+<li>position: relative;<ul>
+<li>normal flow를 유지함</li>
+</ul>
+</li>
+<li>a tag의 color는 webkit한테 상속받은 user agent stylesheet의 영향을 받는다<ul>
+<li>color: inherit로 해결가능</li>
+</ul>
+</li>
+</ul>
+<h2 id="틀리고-배운점"><a href="#틀리고-배운점" class="headerlink" title="틀리고 배운점"></a>틀리고 배운점</h2><ul>
+<li><code>&lt;img/&gt;</code> inline 요소</li>
+<li><code>&lt;label&gt;</code> inline 요소</li>
+<li><code>&lt;input/&gt;</code> inline-block 요소</li>
+<li><code>&lt;video&gt;</code> inline 요소</li>
+<li><code>&lt;table&gt;</code> table 요소</li>
+<li><code>&lt;a&gt;</code> inline 요소</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://bcround.github.io/2020/10/19/HTML-CSS-First-Lecture/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -459,7 +609,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-count">13</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
